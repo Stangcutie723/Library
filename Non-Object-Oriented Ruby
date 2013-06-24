@@ -14,7 +14,7 @@ puts "What would you like to do?"
 puts "-- Type 'add' to add a book to your shelf."
 puts "-- Type 'update' to update your book collection."
 puts "-- Type 'display' to display all books."
-puts "-- "Type 'delete' to take a book off your shelf."
+puts "-- Type 'delete' to take a book off your shelf."
 
 choice = gets.chomp.downcase
 case choice
