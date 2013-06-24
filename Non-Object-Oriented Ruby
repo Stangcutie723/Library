@@ -1,0 +1,59 @@
+library = {
+Of_Mice_and_Men: 9,
+Pride_and_Prejudice: 8,
+Cinderella: 7,
+Texas_Ranger_Collection: 6,
+Choose_Your_Own_Adventure: 5,
+Goosebumps: 4,
+Book_of_Maps: 3,
+Cyanide_and_Happiness: 2,
+Romeo_and_Juliet: 1
+}
+
+puts "What would you like to do?"
+puts "-- Type 'add' to add a book to your shelf."
+puts "-- Type 'update' to update your book collection."
+puts "-- Type 'display' to display all books."
+puts "-- "Type 'delete' to take a book off your shelf."
+
+choice = gets.chomp.downcase
+case choice
+when 'add'
+  puts "What book do you want to add?"
+  title = gets.chomp
+  if library[title.to_sym].nil?
+    puts "What shelf did you put it on? (Type a number 1 to 9.)"
+    shelf = gets.chomp
+    library[title.to_sym] = shelf.to_i
+    puts "#{title} has been added to shelf number #{shelf}."
+  else
+    puts "That book already exists! Its on shelf number is #{library[title.to_sym]}."
+  end
+
+when 'update'
+  puts "What book do you want to update?"
+  title = gets.chomp
+  if book[title.to_sym].nil?
+    puts "Book not found, sorry!"
+  else
+    puts "What shelf is it on? (Type a number 1 to 9.)"
+    shelf = gets.chomp
+    llibrary[title.to_sym] = shelf.to_i
+    puts "#{title} has been updated with new location of shelf number #{shelf}."
+  end
+when 'display'
+  library.each do |book, shelf|
+    puts "#{book}: #{shelf}"
+  end
+when 'delete'
+  puts "Which book do you want to take off your shelf?"
+  title = gets.chomp
+  if library[title.to_sym].nil?
+    puts "Book not found!"
+  else
+    library.delete(title.to_sym)
+    puts "#{title} has been taken off the shelf."
+  end
+else
+  puts "Sorry, what was that supposed to be?"
+end
