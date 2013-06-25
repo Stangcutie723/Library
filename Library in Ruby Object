@@ -1,5 +1,4 @@
 class Library {
-
         array[] of Shelves;
 
         # constructor
