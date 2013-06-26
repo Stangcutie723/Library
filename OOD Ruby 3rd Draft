@@ -38,7 +38,7 @@ class Book
   end
 
   def to_s
-  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library} \n"
+  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library}. \n"
   end
 
 end
