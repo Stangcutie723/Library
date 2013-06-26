@@ -1,10 +1,11 @@
-#Krystle's Public Library Project
+#Krystle's Public Library
 # Layer one Library
 class Library
   def initialize(library)
     @library = library
   end
   print "Welcome friends to Krystle's Public Library!\n"  
+  print "\n"
 end
 
 # Layer two Shelf
@@ -26,9 +27,11 @@ class Shelf
     Shelf.new("9", "Public Library"),
 ]
 
-  def initialize(enshelf, unshelf)
+  def initialize(enshelf, unshelf, yes, no)
     @enshelf = enshelf
     @unshelf = unshelf
+    @yes = yes
+    @no = no
   end
 end
 
@@ -44,6 +47,7 @@ class Book
   def to_s
   " Title: #{@book}, is located on shelf #{@shelf} in the #{@library}.\n"
   end
+
 end
 
   book = [
@@ -53,20 +57,44 @@ end
     Book.new("The Notebook", "4", "Public Library"),
     Book.new("Romeo and Juliet", "5", "Public Library"),
     Book.new("Animorphs", "6", "Public Library"),
-    Book.new("Hans Christian Anderson Collection", "7", "Public Library"),
+    Book.new("Peter Pan", "7", "Public Library"),
     Book.new("Hatchet", "8", "Public Library"),
     Book.new("The Giver", "9", "Public Library"),
 
   ]
 
-    print "Krystle's Public Library has the following number of books availble for checkout: "
-    print book.length
-    print "! Yeah I only carry the classics!\n"
-    print "\n"
-    print " I hope you don't have a book report due on Ancient Egypt!\n"
-    print "\n"
-    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n"
-    print "\n"
-    print "\n"
-    print "Here is my inventory: \n"
-    print book
+#Greeting
+  print "Krystle's Public Library has the following number of books availble for checkout: "
+  print book.length
+  print "! Yeah I only carry the classics!\n"
+  print "\n"
+  print " I hope you don't have a book report due on Ancient Egypt!\n"
+  print "\n"
+  print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n"
+  print "\n"
+  print "\n"
+  print "Here is my inventory: \n"
+  print book
+  print "\n"
+  print "\n"
+
+#Questions  
+  print "Would you like to take home a book off the list?\n"
+    if yes = gets
+      print "Okay. Which book?\n"
+      unshelf = gets
+      print "You have unshelfed ", unshelf, "\n"
+    else if no = gets
+      print "Very well.\n"
+    end
+
+  print "I see you are done with a book would you like to add it to the shelf?\n"
+    if yes = gets
+      print "Which book is that?\n"
+      enshelf = book.gets
+      print yes, "Okay it goes on that shelf over there.\n"
+      print "Thank you for putting", enshelf, "back for me. Arthritis and all.\n"
+    else if no = gets
+      print "Very well.\n"
+  print "Thank you for visiting the Public Library!\n"
+    end
