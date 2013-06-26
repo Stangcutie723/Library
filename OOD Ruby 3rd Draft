@@ -84,7 +84,7 @@ end
       print "Okay. Which book?\n"
       unshelf = gets
       print "You have unshelfed ", unshelf, "\n"
-    else if no = gets
+    else no = gets
       print "Very well.\n"
     end
 
@@ -94,7 +94,7 @@ end
       enshelf = book.gets
       print yes, "Okay it goes on that shelf over there.\n"
       print "Thank you for putting", enshelf, "back for me. Arthritis and all.\n"
-    else if no = gets
+    else no = gets
       print "Very well.\n"
   print "Thank you for visiting the Public Library!\n"
     end
