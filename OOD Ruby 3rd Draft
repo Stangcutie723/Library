@@ -58,7 +58,8 @@ end
   
     print "Krystle's Public Library has the following number of books availble for checkout: "
     print book.length
-    print "! Good thing you don't have a book report due on Acient Egypt!" 
-  
+    print "! Yeah I only carry the classics!"
+    print " I hope you don't have a book report due on Ancient Egypt!"
+    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!" 
   
   
