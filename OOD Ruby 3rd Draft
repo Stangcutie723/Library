@@ -1,4 +1,4 @@
-
+#Krystle's Public Library Project
 # Layer one Library
 class Library
   def initialize(library)
