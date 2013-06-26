@@ -42,7 +42,7 @@ class Book
   end
 
   def to_s
-  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library}.\n\n"
+  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library}.\n"
   end
 end
 
@@ -61,11 +61,12 @@ end
 
     print "Krystle's Public Library has the following number of books availble for checkout: "
     print book.length
-    print "! Yeah I only carry the classics!\n\n"
-    print " I hope you don't have a book report due on Ancient Egypt!\n\n"
-    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n\n\n" 
+    print "! Yeah I only carry the classics!\n"
+    print "\n"
+    print " I hope you don't have a book report due on Ancient Egypt!\n"
+    print "\n"
+    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n"
+    print "\n"
+    print "\n"
     print "Here is my inventory: \n"
     print book
-    
-    
-    
