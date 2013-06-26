@@ -38,7 +38,7 @@ class Book
   end
 
   def to_s
-  "the book: #{@book} is located on shelf #{@shelf} in the library #{@library}"
+  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library} \n"
   end
 
 end
@@ -55,11 +55,11 @@ end
     Book.new("The Giver", "9", "Public Library"),
 
   ]
-  
+
     print "Krystle's Public Library has the following number of books availble for checkout: "
     print book.length
-    print "! Yeah I only carry the classics!"
-    print " I hope you don't have a book report due on Ancient Egypt!"
-    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!" 
-  
-  
+    print "! Yeah I only carry the classics!\n"
+    print " I hope you don't have a book report due on Ancient Egypt!\n"
+    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n" 
+    print "Here is my inventory: \n"
+    print book
