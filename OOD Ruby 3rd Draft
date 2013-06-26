@@ -4,7 +4,7 @@ class Library
   def initialize(library)
     @library = library
   end
- 
+  print "Welcome friends to Krystle's Public Library!\n"  
 end
 
 # Layer two Shelf
@@ -26,6 +26,10 @@ class Shelf
     Shelf.new("9", "Public Library"),
 ]
 
+  def initialize(enshelf, unshelf)
+    @enshelf = enshelf
+    @unshelf = unshelf
+  end
 end
 
 #Layer three book
@@ -38,9 +42,8 @@ class Book
   end
 
   def to_s
-  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library}. \n"
+  " Title: #{@book}, is located on shelf #{@shelf} in the #{@library}.\n\n"
   end
-
 end
 
   book = [
@@ -58,8 +61,11 @@ end
 
     print "Krystle's Public Library has the following number of books availble for checkout: "
     print book.length
-    print "! Yeah I only carry the classics!\n"
-    print " I hope you don't have a book report due on Ancient Egypt!\n"
-    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n" 
+    print "! Yeah I only carry the classics!\n\n"
+    print " I hope you don't have a book report due on Ancient Egypt!\n\n"
+    print " Currently the other 237 books are in storage. Have a nice day though! Maybe try that popular thing called the internet if you don't find what you're looking for!\n\n\n" 
     print "Here is my inventory: \n"
     print book
+    
+    
+    
