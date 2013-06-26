@@ -1,0 +1,33 @@
+# Layer one Library
+class Library
+def initialize(shelves, books)
+@shelves = shelves
+@books = books
+books = [['Goosebumps', 'Shakespeare', 'Astronomy', 'Stephen King', 'Calvin and Hobbes']]
+books.count #=>5
+
+end
+end
+
+# Layer two Shelf
+class Shelf < Library
+def initialize(shelves, books)
+super
+
+end
+end
+
+
+#Layer three book
+class Book < Shelf
+def initialize(shelves, books)
+super
+end
+
+#ENSHELF adding a book to the array/shelf
+books.insert('Illiad', 'Notebook')
+
+#UNSHELF taking a book off the array/shelf
+books.delete('Stephen King')
+
+end
