@@ -1,34 +1,58 @@
 # Layer one Library
 class Library
-  def initialize(shelves, books)
-    @shelves = shelves
-    @books = books
-    books = [['Goosebumps', 'Shakespeare', 'Astronomy', 'Stephen King', 'Calvin and Hobbes']]
-    books.count #=>5
+  def initialize(library, bookcount)
+    @library = library
+    @bookcount = bookcount
   end
+  bookcount.count 
+  puts "Library has a book count of #{@bookcount}!"
+   
 end
 
 # Layer two Shelf
-class Shelf < Library
-  def initialize(shelves, books)
-    super(shelves, books)
-    shelves = [['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']]
-    shelves.count #=> 26
+class Shelf 
+  def initialize(shelf, library)
+    @shelf = shelf
+    @library = library  
   end
-end
 
+  shelf = [
+    Shelf.new("1", "Public Library"),
+    Shelf.new("2", "Public Library"),
+    Shelf.new("3", "Public Library"),
+    Shelf.new("4", "Public Library"),
+    Shelf.new("5", "Public Library"),
+    Shelf.new("6", "Public Library"),
+    Shelf.new("7", "Public Library"),
+    Shelf.new("8", "Public Library"),
+    Shelf.new("9", "Public Library"),
+]
 
 #Layer three book
-class Book < Shelf
-  def initialize(shelves, books)
-    super(shelves, books)
+class Book
+  attr_accessor :book, :shelf, :library
+  def initialize(book, shelf, library)
+    @book = book
+    @shelf = shelf
+    @library = library  
   end
 
-#ENSHELF adding a book to the array/shelf
-books.insert('Illiad', 'Notebook')
-
-#UNSHELF taking a book off the array/shelf
-books.delete('Stephen King')
+  def to_s
+  "the book: #{@book} is located on shelf #{@shelf} in the library #{@library}"
+  end
 
 end
 
+  book = [
+    Book.new("Illiad", "1", "Public Library"),
+    Book.new("Goosebumps", "2", "Public Library"),
+    Book.new("Hans Christian Anderson Collection", "7", "Public Library"),
+    Book.new("Of Mice and Men", "3", "Public Library"),
+    Book.new("Romeo and Juliet", "5", "Public Library"),
+    Book.new("Animorphs", "6", "Public Library"),
+    Book.new("Hatchet", "8", "Public Library"),
+    Book.new("The Giver", "9", "Public Library"),
+    Book.new("The Notebook", "4", "Public Library"),
+  ]
+
+puts book
