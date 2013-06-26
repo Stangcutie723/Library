@@ -1,12 +1,10 @@
+
 # Layer one Library
 class Library
-  def initialize(library, bookcount)
+  def initialize(library)
     @library = library
-    @bookcount = bookcount
   end
-  bookcount.count 
-  puts "Library has a book count of #{@bookcount}!"
-   
+ 
 end
 
 # Layer two Shelf
@@ -28,6 +26,8 @@ class Shelf
     Shelf.new("9", "Public Library"),
 ]
 
+end
+
 #Layer three book
 class Book
   attr_accessor :book, :shelf, :library
@@ -46,13 +46,12 @@ end
   book = [
     Book.new("Illiad", "1", "Public Library"),
     Book.new("Goosebumps", "2", "Public Library"),
-    Book.new("Hans Christian Anderson Collection", "7", "Public Library"),
     Book.new("Of Mice and Men", "3", "Public Library"),
+    Book.new("The Notebook", "4", "Public Library"),
     Book.new("Romeo and Juliet", "5", "Public Library"),
     Book.new("Animorphs", "6", "Public Library"),
+    Book.new("Hans Christian Anderson Collection", "7", "Public Library"),
     Book.new("Hatchet", "8", "Public Library"),
     Book.new("The Giver", "9", "Public Library"),
-    Book.new("The Notebook", "4", "Public Library"),
-  ]
 
-puts book
+  ]
