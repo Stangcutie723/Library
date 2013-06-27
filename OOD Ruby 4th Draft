@@ -99,7 +99,7 @@ end
     end
 
 #Farewell
-    print "Heading out? Already!? Ah well...Thank you for visiting the Public Library!\n"
-    print "You know it isn't poilte to not say goodbye...\n"
-    goodbye = gets
+  print "Heading out? Already!? Ah well...Thank you for visiting the Public Library!\n"
+  print "You know it isn't poilte to not say goodbye...\n"
+  goodbye = gets
 
