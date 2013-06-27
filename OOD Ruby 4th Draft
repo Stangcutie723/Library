@@ -94,7 +94,12 @@ end
       enshelf = book.gets
       print yes, "Okay it goes on that shelf over there.\n"
       print "Thank you for putting", enshelf, "back for me. Arthritis and all.\n"
-    else no = gets
+      else no = gets
       print "Very well.\n"
-  print "Thank you for visiting the Public Library!\n"
     end
+
+#Farewell
+    print "Heading out? Already!? Ah well...Thank you for visiting the Public Library!\n"
+    print "You know it isn't poilte to not say goodbye...\n"
+    goodbye = gets
+
