@@ -7,6 +7,7 @@ to the library database! I love books, I must say this was a very
 fun project!
 
 (What I used): Ruby
+
 (With): Object Oriented Design Methods
 
 (At the time of creation I was using Windows 8 and Git Bash!
