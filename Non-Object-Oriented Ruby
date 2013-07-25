@@ -38,7 +38,7 @@ when 'update'
   else
     puts "What shelf is it on? (Type a number 1 to 9.)"
     shelf = gets.chomp
-    llibrary[title.to_sym] = shelf.to_i
+    library[title.to_sym] = shelf.to_i
     puts "#{title} has been updated with new location of shelf number #{shelf}."
   end
 when 'display'
